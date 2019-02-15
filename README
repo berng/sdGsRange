@@ -1,0 +1,5 @@
+To compile:
+Link include, lib, hdw directories from RSTlite distribution
+Create iri-src directory and copy IRI-2007 model there
+
+
