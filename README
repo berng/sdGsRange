@@ -1,10 +1,22 @@
+https://arxiv.org/abs/1812.08878
+
 To compile:
-Link include, lib, hdw directories from RSTlite distribution
+1) Download and install from RSTlite distribution
 (https://github.com/vtsuperdarn/RSTLite)
 or RST
 (https://github.com/SuperDARN/rst)
-Create iri-src directory and copy IRI-2007 model 
-(http://irimodel.org/IRI-2007/)
-there.
+2) Link include, lib, hdw directories from RST (RST_lite)
+
+3) Get IRI-2007 model 
+(http://irimodel.org/IRI-2007/00_iri2007.tar) and untar it into iri-src directory:
+tar -xvf 00_iri2007.tar
+
+4) Apply iri2007.patch
+ patch -p0 < iri2007.patch
+
+5) Make and compile
+./make all
+
+
 
 
